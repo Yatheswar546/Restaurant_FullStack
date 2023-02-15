@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   
+}
+:root{
+    --teal:teal;
+}
+body{
+    font-family: "Open Sans";
+    /* color: #fefefe; */
+     /* background: url("../images/image1.jpg") center / cover no-repeat fixed; */
+
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    width:100%;
+    background:#fff;
+    padding:1.5rem;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    height:3rem;
+}
+.logo {
+    color: teal;
+    font-family: 'Cinzel', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sacramento', cursive;
+font-size: 25px;
+justify-content: center;
+align-items: center;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 3rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.5rem;
+    color:var(--teal);
+}
+
+header .navbar ul li a:hover{
+    color:white;
+    background: var(--teal);
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+header #menu-bar{
+    font-size: 3rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:768px){
+
+
+    header #menu-bar{
+        display: block;
+        color: black;
+        font-size: 20px;
+        z-index: 1000;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:10rem; left:0;
+        width:100%;
+        height: 110vh;
+        background:var(--teal);
+        border-top: .2rem solid rgba(0,0,0,.1);
+        transform:scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+    }
+
+    header .navbar ul li{
+        margin:1.5rem;
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        display: block;
+        color:#fff;
+        padding-left: 2rem;
+        border-left: .2rem solid #fff;
+        font-size: 2rem;
+    }
+
+    header .navbar ul li a:hover
+    {
+        color:#333;
+        border-color: #333;
+    }
+
+    .fa-times{
+        transform:rotate(180deg);
+    }
+
+    header .navbar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .order .row .image{
+        display: none;
+    }
+
+}
+
+
+section{
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/login1.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translate(0, -50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+
+    text-align: center;
+    margin-bottom: 2em;
+}
+.control label{
+    font-size: 1.5em;  
+      color: #fff;
+
+}
+input, button{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+button{
+    background: crimson;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity .3s ease;
+}
+button:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .3s esae;
+}
+.link a:hover{
+opacity: 1;
+}
