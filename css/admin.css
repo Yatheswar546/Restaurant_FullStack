@@ -52,6 +52,8 @@ html {
 }
 
 .container {
+    position: relative;
+    margin-top: 700px;
     max-width: 1200px;
     padding: 2rem;
     margin: 0 auto;
@@ -146,3 +148,193 @@ html {
         font-size: 50%;
     }
 }
+
+
+
+.btn{
+    font-size: 1.7rem;
+    padding:.7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background:none;
+    color:#333;
+    cursor: pointer;
+    border:.2rem solid var(--teal);
+}
+
+.btn:hover{
+    background:var(--teal);
+    color: #fff;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding:0 .5rem;
+    color:#333;
+}
+
+.heading span{
+    color:var(--teal);
+}
+
+header{
+    /* position: fixed; */
+    top:0; left:0;
+    z-index: 1000;
+    width:100%;
+    /* background:#da2d2d; */
+    padding:1.5rem 5%;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    height:7rem;
+}
+.logo, .logoname{
+    color: teal;
+    font-family: 'Cinzel', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sacramento', cursive;
+font-size: 25px;
+justify-content: center;
+align-items: center;
+}
+.logoname{
+    position: absolute;
+    margin-left: 15%;
+    font-size: 18px;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    /* background-color: blue; */
+}
+
+header .navbar ul li{
+    margin-left: 3rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.7rem;
+    color:var(--teal);
+}
+
+header .navbar ul li a:hover{
+    color:white;
+    background: var(--teal);
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+header #menu-bar{
+    font-size: 3rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+}
+
+.navsocial i{
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 0 30px;
+    float: right;
+    transition: 0.5s;
+}
+.navsocial i:hover{
+    font-size: 25px;
+}
+/* @media (max-width:768px){
+
+
+    header #menu-bar{
+        display: block;
+        color: black;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:10rem; left:0;
+        width:100%;
+        height: 110vh;
+        background:var(--teal);
+        border-top: .2rem solid rgba(0,0,0,.1);
+        transform:scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+    }
+
+    header .navbar ul li{
+        margin:1.5rem;
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        display: block;
+        color:#fff;
+        padding-left: 2rem;
+        border-left: .2rem solid #fff;
+        font-size: 2rem;
+    }
+
+    header .navbar ul li a:hover
+    {
+        color:#333;
+        border-color: #333;
+    }
+
+    .fa-times{
+        transform:rotate(180deg);
+    }
+
+    header .navbar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .order .row .image{
+        display: none;
+    }
+    .navsocial{
+        width:15%;
+    }
+    .navsocial i{
+        padding: 15px;
+        background-color:white;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    section{
+        padding:1rem 5%;
+        padding-top: 8.5rem;
+    }
+} */

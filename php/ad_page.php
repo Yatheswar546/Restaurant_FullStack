@@ -40,8 +40,13 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    <title>admin page</title>
 
+   <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -60,7 +65,30 @@ if(isset($message)){
 }
 
 ?>
-   
+<header>
+      <a href="#" class="logo"><img src="../images/logo.png" alt="" /></a>
+      <a href="#" class="logoname">Friendly Cafe</a>
+
+      <!-- <div id="menu-bar" class="fas fa-hamburger"></div> -->
+
+      <nav class="navbar">
+        <!-- <section class="navlinks"> -->
+        <ul>
+          <li><a class="active" href="../index.html">home</a></li>
+          <!-- <li><a href="../index.html#about">about</a></li>
+          <li><a href="../index.html#menu">menu</a></li>
+          <li><a href="../index.html#popular">popular</a></li>
+          <li><a href="../index.html#gallery">gallery</a></li> -->
+          <li><a href="logout.php">
+            logout
+          </a></li>
+        </ul>
+        <!-- <div class="navsocial">
+        <a href="https://www.facebook.com/"><i class="bx bxl-facebook" style="color: blue"></i></a>  
+         <a href="https://www.instagram.com/"><i class="bx bxl-instagram" style="color: rgb(246, 6, 74)"></i></a> 
+         <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bx bxl-twitter" style="color: rgb(4, 165, 218)"></i></a> 
+        </div> -->
+</header>
 <div class="container">
 
    <div class="admin-product-form-container">
@@ -105,6 +133,7 @@ if(isset($message)){
    </div>
 
 </div>
+<script src="./js/script.js"></script>
 
 
 </body>
