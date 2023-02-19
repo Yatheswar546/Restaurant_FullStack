@@ -324,7 +324,14 @@ header #menu-bar{
     .order .row .image{
         display: none;
     }
-
+    .navsocial{
+        width:15%;
+    }
+    .navsocial i{
+        padding: 15px;
+        background-color:white;
+        border-radius: 100%;
+    }
 }
 
 @media (max-width:500px){
