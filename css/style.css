@@ -106,7 +106,7 @@ align-items: center;
 }
 .logoname{
     position: absolute;
-    margin-left: 15%;
+    margin-left: 8%;
 }
 
 header .navbar ul{
@@ -262,7 +262,9 @@ header #menu-bar{
 
 @media (max-width:768px){
 
-
+    .logoname{
+        margin-left: 15%;
+    }
     header #menu-bar{
         display: block;
         color: black;
