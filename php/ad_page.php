@@ -74,11 +74,11 @@ if(isset($message)){
       <nav class="navbar">
         <!-- <section class="navlinks"> -->
         <ul>
-          <li><a class="active" href="../index.html">home</a></li>
-          <!-- <li><a href="../index.html#about">about</a></li>
-          <li><a href="../index.html#menu">menu</a></li>
-          <li><a href="../index.html#popular">popular</a></li>
-          <li><a href="../index.html#gallery">gallery</a></li> -->
+          <li><a class="active" href="../index.php">home</a></li>
+          <!-- <li><a href="../index.php#about">about</a></li>
+          <li><a href="../index.php#menu">menu</a></li>
+          <li><a href="../index.php#popular">popular</a></li>
+          <li><a href="../index.php#gallery">gallery</a></li> -->
           <li><a href="logout.php">
             logout
           </a></li>
